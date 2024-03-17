@@ -90,3 +90,93 @@ modal3.onclick = function() {
 
 </body>
 </html>
+<head>
+  <style>
+      .myVideo {
+          width: 100%;
+          max-width: 300px;
+      }
+
+      .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0,0.9);
+      }
+
+      .modal video {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+      }
+  </style>
+</head>
+<body>
+
+<video class="myVideo" id="myVideo1" src="Videos/yuyu.mp4.mp4" controls></video>
+<video class="myVideo" id="myVideo2" src="Videos/jjk.mp4.mp4" controls></video>
+<video class="myVideo" id="myVideo3" src="Videos/Hxh.mp4.mp4" controls></video>
+
+<div id="myModal1" class="modal">
+<video class="modal-content" id="vid01" controls></video>
+</div>
+
+<div id="myModal2" class="modal">
+<video class="modal-content" id="vid02" controls></video>
+</div>
+
+<div id="myModal3" class="modal">
+<video class="modal-content" id="vid03" controls></video>
+</div>
+
+<script>
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
+var modal3 = document.getElementById("myModal3");
+
+var vid1 = document.getElementById("myVideo1");
+var vid2 = document.getElementById("myVideo2");
+var vid3 = document.getElementById("myVideo3");
+
+var modalVid1 = document.getElementById("vid01");
+var modalVid2 = document.getElementById("vid02");
+var modalVid3 = document.getElementById("vid03");
+
+vid1.onclick = function(){
+modal1.style.display = "block";
+modalVid1.src = this.src;
+}
+
+vid2.onclick = function(){
+modal2.style.display = "block";
+modalVid2.src = this.src;
+}
+
+vid3.onclick = function(){
+modal3.style.display = "block";
+modalVid3.src = this.src;
+}
+
+modal1.onclick = function() { 
+modal1.style.display = "none";
+}
+
+modal2.onclick = function() { 
+modal2.style.display = "none";
+}
+
+modal3.onclick = function() { 
+modal3.style.display = "none";
+}
+</script>
+
+</body>
+</html>
