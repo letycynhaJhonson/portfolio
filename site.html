@@ -11,8 +11,13 @@
             background-color: black;
         }
         .image-container img {
-            width: 20%;
+            max-width: 100%;
             height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
