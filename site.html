@@ -2,25 +2,30 @@
 <html>
 <head>
     <style>
-        .image-container {
-            display: flex;
-            justify-content: space-around;
+        body {
+            background-color: #040629;
         }
-        .image-container img {
-            width: 100px;
-            height: 100px;
+        table {
+            width: 100%;
         }
-        .image-container img:active {
-            width: 200px;
-            height: 200px;
+        td {
+            width: 33%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="imagens/yuyu.jpeg" alt="Imagem 1">
-        <img src="imagens/JJK.jpeg" alt="Imagem 2">
-        <img src="imagens/Hxh.jpeg" alt="Imagem 3">
-    </div>
+    <table>
+        <tr>
+            <td><a href="imagens/Hxh.jpeg" target="_blank"><img src="imagens/Hxh.jpeg" alt="Imagem 1" width="100%"></a></td>
+            <td><a href="imagens/JJK.jpeg" target="_blank"><img src="imagens/JJK.jpeg" alt="Imagem 2" width="100%"></a></td>
+            <td><a href="Videos/Hxh.mp4.mp4" target="_blank"><video src="Videos/Hxh.mp4.mp4" alt="Vídeo 1" width="100%"></video></a></td>
+        </tr>
+        <tr>
+            <td><a href="imagens/yuyu.jpeg" target="_blank"><img src="imagens/yuyu.jpeg" alt="Imagem 3" width="100%"></a></td>
+            <td><a href="Videos/jjk.mp4.mp4" target="_blank"><video src="Videos/jjk.mp4.mp4" alt="Vídeo 2" width="100%"></video></a></td>
+            <td><a href="Videos/yuyu.mp4.mp4" target="_blank"><video src="Videos/yuyu.mp4.mp4" alt="Vídeo 3" width="100%"></video></a></td>
+        </tr>
+    </table>
 </body>
 </html>
