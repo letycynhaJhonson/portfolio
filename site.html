@@ -120,90 +120,51 @@ modal3.onclick = function() {
     </style>
 </head>
 <body>
-
-<video class="myVideo" id="myVideo1" src="Videos/yuyu.mp4.mp4" controls></video>
-<video class="myVideo" id="myVideo2" src="Videos/jjk.mp4.mp4" controls></video>
-<video class="myVideo" id="myVideo3" src="Videos/Hxh.mp4.mp4" controls></video>
-
-<div id="myModal1" class="modal">
-  <video class="modal-content" id="vid01" controls></video>
-</div>
-
-<div id="myModal2" class="modal">
-  <video class="modal-content" id="vid02" controls></video>
-</div>
-
-<div id="myModal3" class="modal">
-  <video class="modal-content" id="vid03" controls></video>
-</div>
-
-<script>
-var modal1 = document.getElementById("myModal1");
-var modal2 = document.getElementById("myModal2");
-var modal3 = document.getElementById("myModal3");
-
-var vid1 = document.getElementById("myVideo1");
-var vid2 = document.getElementById("myVideo2");
-var vid3 = document.getElementById("myVideo3");
-
-var modalVid1 = document.getElementById("vid01");
-var modalVid2 = document.getElementById("vid02");
-var modalVid3 = document.getElementById("vid03");
-
-vid1.onclick = function(){
-  modal1.style.display = "block";
-  modalVid1.src = this.src;
-}
-
-vid2.onclick = function(){
-  modal2.style.display = "block";
-  modalVid2.src = this.src;
-}
-
-vid3.onclick = function(){
-  modal3.style.display = "block";
-  modalVid3.src = this.src;
-}
-
-modal1.onclick = function() { 
-  modal1.style.display = "none";
-}
-
-modal2.onclick = function() { 
-  modal2.style.display = "none";
-}
-
-modal3.onclick = function() { 
-  modal3.style.display = "none";
-}
-</script>
-
-</body>
-</html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeos</title>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <style>
+        /* Estilize os vídeos conforme sua preferência */
+        video {
+            width: 100%;
+            max-width: 600px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1>Meus Vídeos</h1>
+    <h1>Meus Vídeos</h1>
 
-  <!-- Primeiro vídeo -->
-  <video controls>
-      <source src="Videos/yuyu.mp4.mp4" type="video/mp4">
-      Seu navegador não suporta o formato de vídeo.
-  </video>
+    <!-- Primeiro vídeo -->
+    <video controls onclick="expandVideo(this)">
+        <source src="Videos/yuyu.mp4.mp4" type="video/mp4">
+        Seu navegador não suporta o formato de vídeo.
+    </video>
 
-  <!-- Segundo vídeo -->
-  <video controls>
-      <source src="Videos/jjk.mp4.mp4" type="video/mp4">
-      Seu navegador não suporta o formato de vídeo.
-  </video>
+    <!-- Segundo vídeo -->
+    <video controls onclick="expandVideo(this)">
+        <source src="Videos/jjk.mp4.mp4" type="video/mp4">
+        Seu navegador não suporta o formato de vídeo.
+    </video>
 
-  <!-- Terceiro vídeo -->
-  <video controls>
-      <source src="Videos/" type="video/mp4">
-      Seu navegador não suporta o formato de vídeo.
-  </video>
+    <!-- Terceiro vídeo -->
+    <video controls onclick="expandVideo(this)">
+        <source src="Videos/Hxh.mp4.mp4" type="video/mp4">
+        Seu navegador não suporta o formato de vídeo.
+    </video>
+
+    <script>
+        function expandVideo(videoElement) {
+            if (videoElement.requestFullscreen) {
+                videoElement.requestFullscreen();
+            } else if (videoElement.mozRequestFullScreen) { /* Firefox */
+                videoElement.mozRequestFullScreen();
+            } else if (videoElement.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                videoElement.webkitRequestFullscreen();
+            }
+        }
+    </script>
 </body>
 </html>
