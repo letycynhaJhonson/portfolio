@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens Centralizadas</title>
     <style>
         .image-container {
             display: flex;
-            justify-content: center;
-            background-color: black;
+            justify-content: space-around;
         }
         .image-container img {
-            max-width: 100%;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s;
+            width: 100px;
+            height: 100px;
         }
-        .image-container img:hover {
-            transform: scale(1.1);
+        .image-container img:active {
+            width: 200px;
+            height: 200px;
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <img src="imagens/Hxh.jpeg" alt="imagem1">
-        <img src="imagens/yuyu.jpeg" alt="imagem2">
-        <img src="imagens/JJK.jpeg" alt="imagem3">
+        <img src="imagens/yuyu.jpeg" alt="Imagem 1">
+        <img src="imagens/JJK.jpeg" alt="Imagem 2">
+        <img src="imagens/Hxh.jpeg" alt="Imagem 3">
     </div>
 </body>
 </html>
