@@ -17,30 +17,48 @@
             width: 100%;
             height: auto;
         }
+        .expanded {
+            width: 100%;
+            height: auto;
+        }
     </style>
+    <script>
+        function expandMedia(event) {
+            var element = event.target;
+            if (element.className === 'expanded') {
+                element.className = '';
+                element.style.width = '100%';
+                element.style.height = 'auto';
+            } else {
+                element.className = 'expanded';
+                element.style.width = '100%';
+                element.style.height = '100%';
+            }
+        }
+    </script>
 </head>
 <body>
     <table>
         <tr>
-            <td><img src="imagens/Hxh.jpeg" onclick="this.style.width='100%'; this.style.height='auto'"></td>
+            <td><img src="imagens/Hxh.jpeg" onclick="expandMedia(event)"></td>
             <td>
-                <video controls onclick="this.style.width='100%'; this.style.height='auto'">
+                <video controls onclick="expandMedia(event)">
                     <source src="Videos/Hxh.mp4.mp4" type="video/mp4">
                 </video>
             </td>
         </tr>
         <tr>
-            <td><img src="imagens/JJK.jpeg" onclick="this.style.width='100%'; this.style.height='auto'"></td>
+            <td><img src="imagens/JJK.jpeg" onclick="expandMedia(event)"></td>
             <td>
-                <video controls onclick="this.style.width='100%'; this.style.height='auto'">
+                <video controls onclick="expandMedia(event)">
                     <source src="Videos/jjk.mp4.mp4" type="video/mp4">
                 </video>
             </td>
         </tr>
         <tr>
-            <td><img src="imagens/yuyu.jpeg" onclick="this.style.width='100%'; this.style.height='auto'"></td>
+            <td><img src="imagens/yuyu.jpeg" onclick="expandMedia(event)"></td>
             <td>
-                <video controls onclick="this.style.width='100%'; this.style.height='auto'">
+                <video controls onclick="expandMedia(event)">
                     <source src="Videos/yuyu.mp4.mp4" type="video/mp4">
                 </video>
             </td>
