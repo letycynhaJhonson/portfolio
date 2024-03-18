@@ -11,20 +11,23 @@
             background-color: black;
         }
         .image-container img {
-            max-width: 100%;
+            width: 30%;
             height: auto;
             transition: transform 0.2s;
         }
-        .image-container img:hover {
-            transform: scale(1.1);
-        }
     </style>
+    <script>
+        function expandImage(event) {
+            var img = event.target;
+            img.style.transform = img.style.transform ? '' : 'scale(3.33)';
+        }
+    </script>
 </head>
 <body>
     <div class="image-container">
-        <img src="imagens/Hxh.jpeg" alt="imagem1">
-        <img src="imagens/yuyu.jpeg" alt="imagem2">
-        <img src="imagens/JJK.jpeg" alt="imagem3">
+        <img src="imagens/Hxh.jpeg" alt="imagem1" onclick="expandImage(event)">
+        <img src="imagens/yuyu.jpeg" alt="imagem2" onclick="expandImage(event)">
+        <img src="imagens/JJK.jpeg" alt="imagem3" onclick="expandImage(event)">
     </div>
 </body>
 </html>
