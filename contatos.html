@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .contact-form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .contact-form button {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Informações de Contato:</h1>
-    <p>Nome: Marya</p>
-    <p>Numero: (99)9918985568</p>
-    <p>Email: licamarya08@gmail.com</p>
-
+    <div class="contact-form">
+        <form action="mailto:licamarya08@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="mail" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Assunto" required>
+            <textarea name="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
