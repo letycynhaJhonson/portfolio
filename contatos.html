@@ -1,50 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            border: 5px solid #800020; /* borda vermelho vinho */
-        }
-        .contact-form {
-            width: 300px;
-            margin: 0 auto;
-            border: 5px solid #800020; /* borda vermelho vinho */
-            padding: 20px;
-            text-align: center; /* centralizado */
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        .contact-form button {
-            width: 100%;
-        }
-        .info {
-            text-align: center; /* centralizado */
-            color: rgb(126, 33, 33); /* cor vermelha */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="info">
-        <p>Numero de telefone: (99)99189-8568</p>
-        <p>Email: licasilva@acad.ifma.edu.br</p>
-    </div>
-    <div class="contact-form">
-        <form action="https://formsubmit.co/licamarya08@gmail.com" method="post">
-            <input type="text" name="name" placeholder="Digite seu nome" required>
-            <input type="email" name="email" placeholder="Digite seu e-mail" required>
-            <textarea cols="30" rows="10" name="message" placeholder="Digite sua mensagem" required></textarea>
-            <button type="submit">ENVIAR</button>
-            <input type="hidden" name="_subject" value="Novo Contato!">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-        </form>
-    </div>
-    <div style="text-align:center;">
-        <img src="imagens/rbdfoto.jpg" alt="Sua imagem aqui">
-    </div>
+  <h1>CONTATO</h1>
+  <form action="https://formsubmit.co/maryalica08@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Digite seu nome" required>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+
+    <textarea cols="30" rows="10" name="message" 
+      placeholder="Digite sua mensagem" required></textarea>
+    
+    <button type="submit">ENVIAR</button>
+    
+    <input type="hidden" name="_subject" value="Novo Contato!">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
 </body>
 </html>
