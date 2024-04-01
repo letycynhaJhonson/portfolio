@@ -29,14 +29,13 @@
         <p>Numero de telefone: (99)99189-8568</p>
         <p>Email: licasilva@acad.ifma.edu.br</p>
     </div>
-    <div class="contact-form">
-        <form action="mailto:licamarya08@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Nome" required>
-            <input type="email" name="mail" placeholder="Email" required>
-            <input type="text" name="subject" placeholder="Assunto" required>
-            <textarea name="message" placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</body>
-</html>
+    <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/enviar-email" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem"></textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+      
