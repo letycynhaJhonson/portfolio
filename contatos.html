@@ -33,60 +33,18 @@
         <p>Email: licasilva@acad.ifma.edu.br</p>
     </div>
     <div class="contact-form">
-        <form action="" method="post">
+        <form action="/enviar-email" method="post">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome"><br>
-            <label for="email">Seu Email:</label><br>
+            <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
-            <label for="destino">Email Destinado:</label><br>
-            <input type="email" id="destino" name="destino"><br>
             <label for="mensagem">Mensagem:</label><br>
             <textarea id="mensagem" name="mensagem"></textarea><br>
             <input type="submit" value="Enviar">
         </form>
     </div>
     <div style="text-align:center;">
-        <img src="imagens/rbdfoto.jpg" alt="rbD">
+        <img src="imagens/rbdfoto.jpg" alt="Sua imagem aqui">
     </div>
 </body>
 </html>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    require 'PHPMailerAutoload.php';
-
-    $nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $destino = filter_var($_POST['destino'], FILTER_SANITIZE_EMAIL);
-    $mensagem = filter_var($_POST['mensagem'], FILTER_SANITIZE_STRING);
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Formato de e-mail inválido";
-    } else if (!filter_var($destino, FILTER_VALIDATE_EMAIL)) {
-        echo "Formato de e-mail de destino inválido";
-    } else {
-        $mail = new PHPMailer;
-
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'maryalica08@gmail.com';
-        $mail->Password = 'Duda2411';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
-
-        $mail->setFrom($email, $nome);
-        $mail->addAddress($destino);
-
-        $mail->Subject = 'Nova mensagem do seu site';
-        $mail->Body    = "Nome: $nome\n\nEmail: $email\n\nMensagem:\n$mensagem";
-
-        if(!$mail->send()) {
-            echo 'A mensagem não pôde ser enviada.';
-            echo 'Erro do Mailer: ' . $mail->ErrorInfo;
-        } else {
-            echo 'Mensagem enviada.';
-        }
-    }
-}
-?>
