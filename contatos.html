@@ -5,6 +5,7 @@
         body {
             background-color: black;
             color: white;
+            border: 5px solid #800020; /* borda vermelho vinho */
         }
         .contact-form {
             width: 300px;
@@ -17,9 +18,17 @@
         .contact-form button {
             width: 100%;
         }
+        .info {
+            text-align: center; /* centralizado */
+            color: rgb(126, 33, 33); /* cor vermelha */
+        }
     </style>
 </head>
 <body>
+    <div class="info">
+        <p>Numero de telefone: (99)99189-8568</p>
+        <p>Email: licasilva@acad.ifma.edu.br</p>
+    </div>
     <div class="contact-form">
         <form action="mailto:licamarya08@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Nome" required>
