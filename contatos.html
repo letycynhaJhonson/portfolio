@@ -33,7 +33,7 @@
         <p>Email: licasilva@acad.ifma.edu.br</p>
     </div>
     <div class="contact-form">
-        <form action="https://mail.google.com/mail/u/0/#inbox/enviar-email" method="post">
+        <form action="" method="post">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome"><br>
             <label for="email">Email:</label><br>
@@ -48,3 +48,17 @@
     </div>
 </body>
 </html>
+
+<php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $mensagem = $_POST['mensagem'];
+
+    $para = $email;
+    $assunto = "Nova mensagem do seu site";
+    $corpo = "Nome: $nome\n\nMensagem:\n$mensagem";
+
+    mail($para, $assunto, $corpo);
+}
+?>
