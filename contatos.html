@@ -10,6 +10,9 @@
         .contact-form {
             width: 300px;
             margin: 0 auto;
+            border: 5px solid #800020; /* borda vermelho vinho */
+            padding: 20px;
+            text-align: center; /* centralizado */
         }
         .contact-form input, .contact-form textarea {
             width: 100%;
@@ -29,13 +32,19 @@
         <p>Numero de telefone: (99)99189-8568</p>
         <p>Email: licasilva@acad.ifma.edu.br</p>
     </div>
-    <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/enviar-email" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem"></textarea><br>
-        <input type="submit" value="Enviar">
-      </form>
-      
+    <div class="contact-form">
+        <form action="https://mail.google.com/mail/u/0/#inbox/enviar-email" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div style="text-align:center;">
+        <img src="imagens/rbdfoto.jpg" alt="rbD">
+    </div>
+</body>
+</html>
