@@ -20,6 +20,11 @@
         }
         .logo {
             font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            margin-right: 10px;
         }
         .nav-menu {
             display: flex;
@@ -32,6 +37,12 @@
         .nav-menu a {
             text-decoration: none;
             color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+        }
+        .nav-menu a:hover {
+            background-color: white;
+            color: black;
         }
         @media (max-width: 768px) {
             .nav-menu {
@@ -44,20 +55,20 @@
                 margin: 10px 0;
             }
         }
+        .main-image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .main-image img {
+            width: 80%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">Marya Lica</div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#objetivos">Objetivos</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-            </ul>
-        </nav>
+        <!-- Restante do conteúdo do seu portfólio -->
     </header>
-    <!-- Restante do conteúdo do seu portfólio -->
 </body>
 </html>
