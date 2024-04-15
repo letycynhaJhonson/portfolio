@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: rgb(36, 4, 4);
+            background-color: black; /* Changed the background color to black */
             color: white;
         }
         .header {
@@ -49,13 +49,16 @@
         }
         .main-content {
             display: flex;
-            justify-content: space-around;
+            justify-content: center; /* Changed from space-around to center to reduce space between images */
             align-items: center;
             margin: 0px 0;
         }
         .main-content img {
             width: 30%;
             height: auto;
+        }
+        .main-content img:last-child {
+            width: 40%; /* Increased the size of the second image */
         }
         .social-icons {
             display: flex;
