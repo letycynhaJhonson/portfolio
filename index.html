@@ -38,20 +38,6 @@
             background-color: white;
             color: black;
         }
-        .search-bar {
-            display: flex;
-            align-items: center;
-        }
-        .search-bar input[type="text"] {
-            padding: 5px;
-            border-radius: 15px;
-            border: 2px solid #800020;
-            margin-right: 10px;
-        }
-        .search-bar img {
-            width: 30px;
-            height: 30px;
-        }
         @media (max-width: 768px) {
             .nav-menu {
                 display: block;
@@ -61,10 +47,6 @@
             .nav-menu li {
                 display: block;
                 margin: 10px 0;
-            }
-            .search-bar {
-                justify-content: center;
-                margin-top: 10px;
             }
         }
         .main-content {
@@ -104,6 +86,61 @@
             width: 40px;
             height: 40px;
         }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 100px 0;
+        }
+        .textarea-field {
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            width: 400px;
+            padding: 15px;
+            font-size: 14px; /* Diminuir o tamanho do texto */
+            margin-bottom: 15px;
+            resize: none;
+        }
+        .textarea-field::placeholder {
+            font-size: 12px; /* Diminuir o tamanho do texto do placeholder */
+        }
+        .button {
+            background-color: #800020;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px; /* Diminuir o tamanho do texto */
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .button:hover {
+            background-color: #a00028;
+        }
+        .contact-text {
+            font-size: 20px; /* Diminuir o tamanho do texto */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form {
+            width: 100%;
+            max-width: 400px;
+            margin-right: 20px;
+            padding: 20px;
+            text-align: center; /* centralizado */
+        }
+        .info {
+            text-align: center; /* centralizado */
+            color: rgb(126, 33, 33); /* cor vermelha */
+            margin-bottom: 20px;
+        }
         .brand {
             font-size: 24px;
             font-weight: bold;
@@ -129,17 +166,25 @@
             <li><a href="rebelde.html">Rebelde</a></li>
             <li><a href="albuns.html">Albuns</a></li>
         </ul>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
-            <img src="imagens/search-icon.png" alt="Ícone de pesquisa">
-        </div>
         <div class="social-icons">
             <a href="https://wa.me/5599991898568"><img src="imagens/whsJPNG.png" alt="WhatsApp"></a>
             <a href="https://www.instagram.com/__maryalica"><img src="imagens/instaJPNG.png" alt="Instagram"></a>
         </div>
     </header>
     <div class="main-content">
-        <img src="imagens/sua-imagem.jpg" alt="Sua imagem aqui">
+        <div class="button-container">
+            <div class="contact-text">Entre em contato comigo!</div>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/licasilva@acad.ifma.edu.br" method="post">
+                    <textarea class="textarea-field" cols="15" rows="10" name="message" placeholder="Digite sua mensagem" required></textarea>
+                    <button class="button" type="submit">Enviar</button>
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+        <img src="imagens/REBELDEJPNG.png" alt="imagy">
     </div>
 </body>
 </html>
