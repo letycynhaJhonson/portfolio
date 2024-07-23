@@ -130,6 +130,7 @@
             cursor: pointer;
             text-align: center;
             line-height: 1.5;
+            margin: 0 auto; /* Centralizar o botão */
         }
         .button:hover {
             background-color: #a00028;
@@ -180,8 +181,6 @@
             <div class="contact-text">Entre em contato comigo!</div>
             <div class="contact-form">
                 <form action="https://formsubmit.co/licasilva@acad.ifma.edu.br" method="post">
-                    <input type="text" class="input-field" name="name" placeholder="Digite seu nome" required>
-                    <input type="email" class="input-field" name="email" placeholder="Digite seu e-mail" required>
                     <textarea class="textarea-field" cols="30" rows="10" name="message" placeholder="Digite sua mensagem" required></textarea>
                     <button class="button" type="submit">Enviar</button>
                     <input type="hidden" name="_subject" value="Novo Contato!">
