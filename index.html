@@ -87,6 +87,30 @@
             width: 40px;
             height: 40px;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            gap: 10px;
+        }
+        .button {
+            background-color: #800020;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .button:hover {
+            background-color: #a00028;
+        }
     </style>
 </head>
 <body>
@@ -112,6 +136,11 @@
             <a href="https://rebelde.fandom.com/pt-br/wiki/Miguel_Arango?so=search"><img src="imagens/MIGUEL.png" alt="Miguel Arango"></a>
             <a href="https://rebelde.fandom.com/pt-br/wiki/Diego_Bustamante?so=search"><img src="imagens/DIEGO.png" alt="Diego Bustamante"></a>
             <a href="https://rebelde.fandom.com/pt-br/wiki/Giovanni_M%C3%A9ndez"><img src="imagens/GIOVANI.png" alt="Giovane"></a>
+        </div>
+        <div class="button-container">
+            <button class="button">Enviar</button>
+            <button class="button">Entre em contato<br>comigo</button>
+        </div>
     </div>
 </body>
 </html>
