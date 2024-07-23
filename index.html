@@ -51,9 +51,10 @@
         }
         .main-content {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0px 0;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px 0;
         }
         .character-images {
             display: flex;
@@ -72,11 +73,9 @@
             height: auto;
         }
         .main-content img {
-            width: 30%;
+            width: 50%;
             height: auto;
-        }
-        .main-content img:last-child {
-            width: 40%;
+            margin-left: 20px;
         }
         .social-icons {
             display: flex;
@@ -91,8 +90,8 @@
         .button-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin: 60px 0;
+            align-items: flex-start;
+            margin: 100px 0;
         }
         .textarea-field {
             background-color: white;
@@ -101,9 +100,12 @@
             border-radius: 25px;
             width: 300px;
             padding: 15px;
-            font-size: 14px; /* Diminuir o tamanho do texto */
+            font-size: 16px;
             margin-bottom: 15px;
             resize: none;
+        }
+        .textarea-field::placeholder {
+            font-size: 12px; /* Diminuir o tamanho do texto do placeholder */
         }
         .button {
             background-color: #800020;
@@ -119,7 +121,6 @@
             cursor: pointer;
             text-align: center;
             line-height: 1.5;
-            margin: 0 auto; /* Centralizar o botão */
         }
         .button:hover {
             background-color: #a00028;
@@ -131,15 +132,33 @@
         }
         .contact-form {
             width: 300px;
-            margin: 20px auto;
+            margin: 20px 0 20px 0;
             padding: 20px;
             text-align: center; /* centralizado */
+        }
+        .info {
+            text-align: center; /* centralizado */
+            color: rgb(126, 33, 33); /* cor vermelha */
+            margin-bottom: 20px;
+        }
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .brand .marya {
+            color: #800020; /* cor vinho */
+        }
+        .brand .lica {
+            color: white; /* cor branca */
         }
     </style>
 </head>
 <body>
     <!-- Seu conteúdo vai aqui -->
     <header class="header">
+        <div class="brand">
+            <span class="marya">Marya</span><span class="lica">Lica</span>
+        </div>
         <ul class="nav-menu">
             <li><a href="contatos.html">Contatos</a></li>
             <li><a href="projetos.html">Projetos</a></li>
@@ -153,14 +172,6 @@
         </div>
     </header>
     <div class="main-content">
-        <div class="character-images">
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Mia_Colucci"><img src="imagens/MIA.png" alt="Mia Colucci"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Roberta_Pardo"><img src="imagens/ROBERTA.png" alt="Roberta Pardo"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Lupita_Fern%C3%A1ndez"><img src="imagens/LUPITA.png" alt="Lupita"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Miguel_Arango?so=search"><img src="imagens/MIGUEL.png" alt="Miguel Arango"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Diego_Bustamante?so=search"><img src="imagens/DIEGO.png" alt="Diego Bustamante"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Giovanni_M%C3%A9ndez"><img src="imagens/GIOVANI.png" alt="Giovane"></a>
-        </div>
         <div class="button-container">
             <div class="contact-text">Entre em contato comigo!</div>
             <div class="contact-form">
@@ -173,6 +184,7 @@
                 </form>
             </div>
         </div>
+        <img src="imagens/sua-imagem.jpg" alt="Sua imagem aqui">
     </div>
 </body>
 </html>
