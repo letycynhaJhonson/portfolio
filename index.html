@@ -11,6 +11,7 @@
             font-family: Arial, sans-serif;
             background-color: black;
             color: white;
+            border: 5px solid #800020; /* borda vermelho vinho */
         }
         .header {
             background-color: #1d1111;
@@ -127,6 +128,37 @@
             margin-bottom: 20px;
             text-align: center;
         }
+        .contact-form {
+            width: 300px;
+            margin: 20px auto;
+            border: 5px solid #800020; /* borda vermelho vinho */
+            padding: 20px;
+            text-align: center; /* centralizado */
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #800020;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #a00028;
+        }
+        .info {
+            text-align: center; /* centralizado */
+            color: rgb(126, 33, 33); /* cor vermelha */
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -155,10 +187,21 @@
         </div>
         <div class="button-container">
             <div class="contact-text">Entre em contato comigo!</div>
-            <input type="text" class="input-field" placeholder="Escreva aqui">
-            <input type="text" class="input-field" placeholder="Escreva aqui também">
-            <button class="button">Enviar</button>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/licasilva@acad.ifma.edu.br" method="post">
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <textarea cols="30" rows="10" name="message" placeholder="Digite sua mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
         </div>
+    </div>
+    <div style="text-align:center;">
+        <img src="imagens/rbdfoto.jpg" alt="Sua imagem aqui">
     </div>
 </body>
 </html>
