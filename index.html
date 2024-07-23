@@ -89,17 +89,17 @@
         }
         .button-container {
             display: flex;
-            justify-content: center;
-            margin: 20px;
-            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
         }
         .button {
             background-color: #800020;
             color: white;
             border: none;
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            border-radius: 25px;
+            width: 150px;
+            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -110,6 +110,10 @@
         }
         .button:hover {
             background-color: #a00028;
+        }
+        .contact-text {
+            margin-bottom: 10px;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -138,8 +142,8 @@
             <a href="https://rebelde.fandom.com/pt-br/wiki/Giovanni_M%C3%A9ndez"><img src="imagens/GIOVANI.png" alt="Giovane"></a>
         </div>
         <div class="button-container">
+            <div class="contact-text">Entre em contato comigo</div>
             <button class="button">Enviar</button>
-            <button class="button">Entre em contato<br>comigo</button>
         </div>
     </div>
 </body>
