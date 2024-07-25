@@ -65,8 +65,9 @@
         }
         .main-content {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             margin: 20px;
             position: relative;
             z-index: 1; /* Manter main-content abaixo do header */
@@ -79,18 +80,21 @@
         }
         .character-images a {
             display: inline-block;
-            width: 150px; 
-            height: auto;
+            width: 100px; 
+            height: 100px;
             margin: 10px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Formato de estrela */
         }
         .character-images img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
         }
-        .main-content img {
+        .main-content .star-image {
             width: 300px;
-            height: auto;
-            margin-left: 20px;
+            height: 300px;
+            margin: 20px 0;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
         }
         .social-icons {
             display: flex;
@@ -114,6 +118,7 @@
         }
         .contact-text {
             font-size: 32px; /* Aumentar o tamanho do texto */
+            font-weight: bold; /* Deixar o texto mais grosso */
             margin-bottom: 20px;
             text-align: center;
             position: relative;
@@ -121,6 +126,14 @@
         }
         .contact-text .highlight {
             color: #800020; /* cor vinho */
+        }
+        .contact-text .star {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: white;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            margin-left: 10px;
         }
         .textarea-field {
             background-color: white;
@@ -198,9 +211,17 @@
     </header>
     <div class="main-content">
         <div class="button-container">
-            <div class="contact-text">Bem vindo, <span class="highlight">ME CHAMO MARYA EDUARDA!</span></div>
+            <div class="contact-text">Bem vindo, <span class="highlight">ME CHAMO MARYA EDUARDA!</span><div class="star"></div></div>
         </div>
-        <img src="imagens/REBELDEJPNG.png" alt="imagy">
+        <img class="star-image" src="imagens/star-image.png" alt="Imagem em formato de estrela">
+        <div class="character-images">
+            <a href="link1.html"><img src="imagens/image1.jpg" alt="Imagem 1"></a>
+            <a href="link2.html"><img src="imagens/image2.jpg" alt="Imagem 2"></a>
+            <a href="link3.html"><img src="imagens/image3.jpg" alt="Imagem 3"></a>
+            <a href="link4.html"><img src="imagens/image4.jpg" alt="Imagem 4"></a>
+            <a href="link5.html"><img src="imagens/image5.jpg" alt="Imagem 5"></a>
+            <a href="link6.html"><img src="imagens/image6.jpg" alt="Imagem 6"></a>
+        </div>
     </div>
 </body>
 </html>
