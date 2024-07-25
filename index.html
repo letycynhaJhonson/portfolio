@@ -83,7 +83,8 @@
             width: 100px; 
             height: 100px;
             margin: 10px;
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Formato de estrela */
+            border-radius: 50%; /* Formato redondo */
+            overflow: hidden;
         }
         .character-images img {
             width: 100%;
@@ -94,7 +95,13 @@
             width: 300px;
             height: 300px;
             margin: 20px 0;
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            border-radius: 50%; /* Formato redondo */
+            overflow: hidden;
+        }
+        .main-content .star-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .social-icons {
             display: flex;
@@ -111,8 +118,8 @@
         .button-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            margin: 100px 0;
+            align-items: center;
+            margin: 20px 0;
             position: relative;
             z-index: 1; /* Manter button-container abaixo do header */
         }
@@ -213,7 +220,9 @@
         <div class="button-container">
             <div class="contact-text">Bem vindo, <span class="highlight">ME CHAMO MARYA EDUARDA!</span><div class="star"></div></div>
         </div>
-        <img class="star-image" src="imagens/eu.jpeg" alt="Imagem em formato de estrela">
+        <div class="star-image">
+            <img src="imagens/eu.jpeg" alt="Imagem em formato redondo grande">
+        </div>
         <div class="character-images">
             <a href="https://rebelde.fandom.com/pt-br/wiki/Roberta_Pardo"><img src="imagens/ROBERTA.png" alt="Imagem 1"></a>
             <a href="https://rebelde.fandom.com/pt-br/wiki/Mia_Colucci"><img src="imagens/MIA.png" alt="Imagem 2"></a>
