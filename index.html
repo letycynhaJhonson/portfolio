@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Título</title>
-    <link rel="icon" href="caminho/para/o/seu/logo.ico" type="image/x-icon"> <!-- Verifique se o caminho está correto -->
+    <link rel="icon" href="imagens/logorbd.png" type="image/x-icon"> <!-- Verifique se o caminho está correto -->
     <style>
         body {
             margin: 0;
@@ -12,9 +12,21 @@
             background-color: black;
             color: white;
             border: 5px solid #800020; /* borda vermelho vinho */
+            background-image: url('imagens/rbddd.jpg'); /* Caminho da imagem de fundo */
+            background-size: cover;
+            background-position: center;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Transparência preta */
+            backdrop-filter: blur(10px); /* Efeito de desfoque */
         }
         .header {
-            background-color: #1d1111;
+            background-color: rgba(29, 17, 17, 0.8);
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
@@ -54,6 +66,7 @@
             justify-content: center;
             align-items: flex-start;
             margin: 20px;
+            position: relative;
         }
         .character-images {
             display: flex;
@@ -91,6 +104,23 @@
             flex-direction: column;
             align-items: flex-start;
             margin: 100px 0;
+            position: relative;
+        }
+        .contact-text {
+            font-size: 20px; /* Diminuir o tamanho do texto */
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .star-focus {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.7);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            transform: translate(-150px, -50%);
         }
         .textarea-field {
             background-color: white;
@@ -124,11 +154,6 @@
         .button:hover {
             background-color: #a00028;
         }
-        .contact-text {
-            font-size: 20px; /* Diminuir o tamanho do texto */
-            margin-bottom: 20px;
-            text-align: center;
-        }
         .contact-form {
             width: 100%;
             max-width: 400px;
@@ -154,7 +179,7 @@
     </style>
 </head>
 <body>
-    <!-- Seu conteúdo vai aqui -->
+    <div class="overlay"></div>
     <header class="header">
         <div class="brand">
             <span class="marya">Marya</span><span class="lica">Lica</span>
@@ -173,7 +198,9 @@
     </header>
     <div class="main-content">
         <div class="button-container">
-            <div class="contact-text">Me chamo Marya Eduarda!</div>
+            <div class="contact-text">Me chamo Marya Eduarda!
+                <div class="star-focus"></div>
+            </div>
         </div>
         <img src="imagens/REBELDEJPNG.png" alt="imagy">
     </div>
