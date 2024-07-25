@@ -6,6 +6,25 @@
     <title>Seu Título</title>
     <link rel="icon" href="imagens/logorbd.png" type="image/x-icon"> <!-- Verifique se o caminho está correto -->
     <style>
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .animate {
+            animation: bounce-in 1s ease forwards;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -200,7 +219,7 @@
 </head>
 <body>
     <div class="overlay"></div>
-    <header class="header">
+    <header class="header animate">
         <div class="brand">
             <span class="marya">Marya</span><span class="lica">Lica</span>
         </div>
@@ -217,20 +236,14 @@
         </div>
     </header>
     <div class="main-content">
-        <div class="button-container">
+        <div class="button-container animate">
             <div class="contact-text">Bem vindo, <span class="highlight">ME CHAMO MARYA EDUARDA!</span><div class="star"></div></div>
         </div>
-        <div class="star-image">
+        <div class="star-image animate">
             <img src="imagens/eu.jpeg" alt="Imagem em formato redondo grande">
         </div>
-        <div class="character-images">
+        <div class="character-images animate">
             <a href="https://rebelde.fandom.com/pt-br/wiki/Roberta_Pardo"><img src="imagens/ROBERTA.png" alt="Imagem 1"></a>
             <a href="https://rebelde.fandom.com/pt-br/wiki/Mia_Colucci"><img src="imagens/MIA.png" alt="Imagem 2"></a>
             <a href="https://rebelde.fandom.com/pt-br/wiki/Lupita_Fern%C3%A1ndez"><img src="imagens/LUPITA.png" alt="Imagem 3"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Diego_Bustamante"><img src="imagens/DIEGO.png" alt="Imagem 4"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Miguel_Arango"><img src="imagens/MIGUEL.png" alt="Imagem 5"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Giovanni_M%C3%A9ndez"><img src="imagens/GIOVANI.png" alt="Imagem 6"></a>
-        </div>
-    </div>
-</body>
-</html>
+            <a href="https://rebelde.fandom.com/pt-br/wiki/Diego_Bustamante"><img src="imagens
