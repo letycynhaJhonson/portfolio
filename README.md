@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Sobre mim:</h1>
-    <p>Meu nome é Marya e tenho 16 anos e sou uma pessoa bastante curiosa. Gosto de pintar e tudo que envolva a arte
+    <p>Meu nome é Marya e tenho 17 anos e sou uma pessoa bastante curiosa. Gosto de pintar e tudo que envolva a arte
     <h1>Objetivo:</h1>
     </p>Meu objetivo é ficar cada vez melhor nas minhas habilidades
     <h1>Informaçoes de contato:</h1>
