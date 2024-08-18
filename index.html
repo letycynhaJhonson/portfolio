@@ -130,6 +130,7 @@
             margin: 20px 0;
             border-radius: 50%; /* Formato redondo */
             overflow: hidden;
+            position: relative;
         }
         .main-content .star-image img {
             width: 100%;
@@ -142,11 +143,6 @@
             margin: 10px 0;
             position: relative;
             z-index: 2; /* Manter ícones sociais acima do overlay */
-        }
-        .social-icons img {
-            border: none;
-            width: 40px;
-            height: 40px;
         }
         .button-container {
             display: flex;
@@ -237,27 +233,6 @@
             position: relative;
             z-index: 1; /* Manter contact-section abaixo do header */
         }
-        .contact-section .contact-button {
-            background-color: #800020;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            width: 200px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            line-height: 1.5;
-            margin-left: 20px; /* Espaçamento entre a imagem e o botão */
-            text-decoration: none;
-        }
-        .contact-section .contact-button:hover {
-            background-color: #a00028;
-        }
-
         .typing-text {
             font-size: 18px;
             font-weight: bold;
@@ -266,7 +241,7 @@
             white-space: nowrap;
             border-right: 3px solid;
             width: 0;
-            animation: typing 3s steps(30, end) forwards, blink 1s step-end infinite, fade-out 2s 5s forwards;
+            animation: typing 4s steps(40, end) forwards, blink 1s step-end infinite, fade-out 2s 7s forwards;
             position: absolute;
             z-index: 2; /* Manter o texto acima da imagem */
             top: 50%;
@@ -299,10 +274,9 @@
         </div>
         <div class="contact-section">
             <div class="star-image animate">
-                <img src="imagens/eu.jpeg" alt="Imagem em formato redondo grande">
-                <div class="typing-text">Texto ao lado da imagem, aparecendo letra por letra.</div>
+                <img src="imagens/euzinha.jpeg" alt="eu">
+                <div class="typing-text">Me chamo Marya Eduarda, adoro a cor rosa, rebelde e desenho algumas vezes.</div>
             </div>
-            <a href="contatos.html" class="contact-button animate">Entre em contato!</a>
         </div>
         <div class="character-images animate">
             <a href="https://rebelde.fandom.com/pt-br/wiki/Roberta_Pardo"><img src="imagens/ROBERTA.png" alt="Imagem 1"></a>
