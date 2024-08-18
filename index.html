@@ -124,6 +124,12 @@
             height: 100%;
             object-fit: cover;
         }
+        /* Texto adicionado abaixo das imagens */
+        .character-images + p {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
         .main-content .star-image {
             width: 300px;
             height: 300px;
@@ -283,34 +289,39 @@
             <span class="marya">Marya</span><span class="lica">Lica</span>
         </div>
         <ul class="nav-menu">
-            <li><a href="contatos.html">Contatos</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="rebelde.html">Rebelde</a></li>
-            <li><a href="albuns.html">Albuns</a></li>
+            <li><a href="https://github.com/Marya-edu">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/marya-edu/">LinkedIn</a></li>
+            <li><a href="mailto:marya.edu@example.com">Contato</a></li>
         </ul>
-        <div class="social-icons">
-            <a href="https://wa.me/5599991898568"><img src="imagens/whsJPNG.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/__maryalica"><img src="imagens/instaJPNG.png" alt="Instagram"></a>
-        </div>
     </header>
     <div class="main-content">
-        <div class="button-container animate">
-            <div class="contact-text">Bem vindo, <span class="highlight">ME CHAMO MARYA EDUARDA!</span><div class="star"></div></div>
-        </div>
-        <div class="contact-section">
-            <div class="star-image animate">
-                <img src="imagens/euzinha.jpeg" alt="eu">
-                <div class="typing-text">Texto ao lado da imagem, aparecendo letra por letra.</div>
-            </div>
-            <a href="contatos.html" class="contact-button animate">Entre em contato!</a>
-        </div>
         <div class="character-images animate">
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Roberta_Pardo"><img src="imagens/ROBERTA.png" alt="Imagem 1"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Mia_Colucci"><img src="imagens/MIA.png" alt="Imagem 2"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Lupita_Fern%C3%A1ndez"><img src="imagens/LUPITA.png" alt="Imagem 3"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Miguel_Arango"><img src="imagens/MIGUEL.png" alt="Imagem 4"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Giovanni_M%C3%A9ndez"><img src="imagens/GIOVANI.png" alt="Imagem 5"></a>
-            <a href="https://rebelde.fandom.com/pt-br/wiki/Diego_Bustamante"><img src="imagens/DIEGO.png" alt="Imagem 6"></a>
+            <a href="url-para-imagem-1"><img src="imagens/personagem1.jpg" alt="Personagem 1"></a>
+            <a href="url-para-imagem-2"><img src="imagens/personagem2.jpg" alt="Personagem 2"></a>
+            <a href="url-para-imagem-3"><img src="imagens/personagem3.jpg" alt="Personagem 3"></a>
+            <a href="url-para-imagem-4"><img src="imagens/personagem4.jpg" alt="Personagem 4"></a>
+            <a href="url-para-imagem-5"><img src="imagens/personagem5.jpg" alt="Personagem 5"></a>
+            <a href="url-para-imagem-6"><img src="imagens/personagem6.jpg" alt="Personagem 6"></a>
+        </div>
+        <p>Me chamo Marya Eduarda, desenho e gosto de Rebelde (Mexicana)</p>
+        <div class="star-image animate">
+            <img src="imagens/estrela.jpg" alt="Imagem da Estrela">
+            <span class="typing-text">Sua mensagem aqui...</span>
+        </div>
+        <div class="social-icons animate">
+            <a href="#"><img src="imagens/social-icon1.png" alt="Icone 1"></a>
+            <a href="#"><img src="imagens/social-icon2.png" alt="Icone 2"></a>
+            <a href="#"><img src="imagens/social-icon3.png" alt="Icone 3"></a>
+        </div>
+        <div class="button-container animate">
+            <p class="contact-text">Entre em contato <span class="highlight">conosco</span><span class="star"></span></p>
+            <div class="contact-form">
+                <textarea class="textarea-field" rows="4" placeholder="Digite sua mensagem..."></textarea>
+                <button class="button">Enviar</button>
+            </div>
+            <div class="info">
+                Informações de contato e endereço aqui.
+            </div>
         </div>
     </div>
 </body>
